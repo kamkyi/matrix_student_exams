@@ -1,0 +1,126 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+::selection{
+	display: none;
+}
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+	animation-name: fadeIn;
+	animation-duration: 2s;
+    background: #001f30;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width:100vw;
+  height:90vh;
+  background:#001f3f;
+}
+
+.footer{
+	  height: 100px;
+	  width: 100vw;
+	  background: linear-gradient(to top,#001f30 10%,#001f3f);
+	  position: absolute;
+	  bottom: 0;
+	  z-index: -1;
+}
+
+nav{
+	position: absolute;
+	height: 100px;
+	width: 100%;
+	position: absolute;
+	background: rgba(0,0,0,.4);
+	color: white;
+	line-height: 100px;
+}
+
+.logo{
+	padding-left: 20px;
+	padding-right: 20px;
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+}
+
+.menu{
+	  	   position:relative;
+	   float: right;
+	
+	
+}
+ul{
+	list-style-type: none;
+
+}
+.menu ul li{
+	   float: left;
+
+	   padding-right: 20px;
+	   padding-left: 20px;
+
+
+}
+
+.logo:hover , .menu li:hover{
+	cursor: pointer;
+	background: rgba(61, 153, 112, 0.83);
+}
+
+.logo:active , .menu li:active{
+	cursor: pointer;
+	background:rgba(0, 31, 63, 0.6);
+}
+
+@media only screen and (max-width: 434px){
+	  .menu{
+	  	display: none;
+	  }
+}
+
+#loading{
+	   height: 100px;
+	   width: 100px;
+	   border-top: 10px dotted brown;
+	   border-bottom: 10px dotted brown;
+	   border-left: 10px dotted indigo;
+	   border-right: 10px dotted indigo;
+	   border-radius: 100%;
+	   position: absolute;
+	   left: 50%;
+	   top: 50%;
+	   margin-left: -50px;
+	   margin-top: -50px;
+	   animation-name: rotate;
+	   animation-duration: 3s;
+	   animation-iteration-count: infinite;
+}
+
+@keyframes rotate{
+	   100%{
+	   	    transform: rotate(360deg);
+	   }
+}
+
+
+@keyframes fadeIn{
+	    from{
+	    	 opacity: 0;
+	    }
+	    to{
+	    	opacity: 1;
+	    }
+}
