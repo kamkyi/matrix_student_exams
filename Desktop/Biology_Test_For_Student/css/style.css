@@ -1,0 +1,50 @@
+/*scrobar*/
+::-webkit-scrollbar{
+	display: none;
+}
+/*body tag*/
+
+body{
+	 background-color: lightgreen;
+}
+/*list*/
+ol li{
+	height: 100px;
+}
+
+p{
+	text-indent: 20px;
+}
+
+/*pop up plain*/
+#pop-up{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.4);
+	left: 0;
+	display: none;
+	top: 0;
+}
+
+#result{
+	text-align: center;
+	height: 300px;
+	width: 400px;
+	background: white;
+	border:2px solid lightblue;
+	box-shadow: 1px 2px 30px black;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform:translate(-50%,-50%);
+	border-radius: 8px;
+}
+#result table{
+	padding: 20px;
+}
+
+div strong{
+	color: black;
+	text-shadow: 1px 1px 10px white;
+}
